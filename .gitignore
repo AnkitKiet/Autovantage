@@ -1,0 +1,26 @@
+# Documentation
+docs/
+
+# Frontend (Next.js & Node)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env
+frontend/.env*.local
+node_modules/
+.next/
+
+# Backend (Java & Spring Boot)
+backend/target/
+backend/.env
+backend/.idea/
+backend/*.iml
+backend/.vscode/
+*.log
+
+# OS / General
+.DS_Store
+Thumbs.db
+
+.vscode

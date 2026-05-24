@@ -1,0 +1,20 @@
+{
+  "best_params": {
+    "n_estimators": 560,
+    "max_depth": 8,
+    "learning_rate": 0.020038260312712834,
+    "subsample": 0.500195120454848,
+    "colsample_bytree": 0.8305864644788479,
+    "min_child_weight": 10,
+    "reg_alpha": 0.18383294579853776,
+    "reg_lambda": 0.0108505023310374,
+    "gamma": 0.06632733810148525
+  },
+  "metrics": {
+    "rmse": 0.0449,
+    "mae": 0.0363,
+    "ndcg@10": 0.9935,
+    "ndcg@20": 0.9923,
+    "spearman_rho": 0.9686
+  }
+}

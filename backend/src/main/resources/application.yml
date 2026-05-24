@@ -1,0 +1,29 @@
+spring:
+  config:
+    import: file:.env[.properties]
+  datasource:
+    url: jdbc:postgresql://${SUPABASE_DB_HOST}:${SUPABASE_DB_PORT}/${SUPABASE_DB_NAME}?sslmode=require
+    username: ${SUPABASE_DB_USERNAME}
+    password: "${SUPABASE_DB_PASSWORD}"
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      jdbc-url: jdbc:postgresql://${SUPABASE_DB_HOST}:${SUPABASE_DB_PORT}/${SUPABASE_DB_NAME}?sslmode=require
+      username: ${SUPABASE_DB_USERNAME}
+      password: "${SUPABASE_DB_PASSWORD}"
+      connection-timeout: 30000
+      maximum-pool-size: 15
+      minimum-idle: 5
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: update # Hibernate manages the schema directly
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
